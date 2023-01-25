@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #a27b5c;
+}
+/* Header */
+header {
+  max-width: 100%;
+  text-align: center;
+  background-color: #472d2d;
+  margin-bottom: 1rem;
+}
+
+.header-text {
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+header h1 {
+  padding: 1rem;
+}
+
+header h2 {
+  padding-bottom: 5px;
+}
+/* End of Header */
+
+/* Main Body */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stoic-container {
+  margin: auto;
+  width: 80%;
+  border: 2px solid #3c2a21;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #dab88b;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.header-container h2 {
+  margin-bottom: 10px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container img {
+  height: 400px;
+  width: 400px;
+  margin: 1rem;
+  border-radius: 50%;
+  /* object-fit: contain; */
+}
+
+/* Quote */
+
+.quote-container {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  max-width: 900px;
+  margin: 2rem;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+  font-size: 2.75rem;
+}
+
+.long-quote {
+  font-size: 2rem;
+}
+
+.fa-quote-left {
+  font-size: 4rem;
+}
+
+.quote-author {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
+.button-container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: end;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background: #333;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  /* box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65); */
+  box-shadow: none;
+}
+
+/* End of Quote */
+
+/*End of Main Body*/
+
+@media only screen and (max-width: 1650px) {
+  .stoic-container {
+    display: none;
+  }
+  .quote-container {
+    max-width: 1000px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #quote {
+    font-size: 64px;
+  }
+
+  #author {
+    font-size: 54px;
+  }
+
+  #new-quote {
+    height: 5rem;
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  #quote {
+    font-size: 38px;
+  }
+  #author {
+    font-size: 36px;
+  }
+  #new-quote {
+    height: 4rem;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+  .quote-text i {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #quote {
+    font-size: 40px;
+  }
+
+  #author {
+    font-size: 32px;
+  }
+
+  #new-quote {
+    height: 2.5rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 913px) {
+  .quote-container {
+    max-width: 500px;
+    height: 1000px;
+  }
+  #quote {
+    font-size: 54px;
+  }
+
+  #author {
+    font-size: 45px;
+  }
+
+  #new-quote {
+    height: 4rem;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 583px) {
+  .quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+  }
+
+  .quote-text i {
+    /* font-size: 36px; */
+    font-size: 48px;
+  }
+
+  #quote {
+    /* font-size: 24px; */
+    font-size: 36px;
+  }
+
+  #author {
+    font-size: 28px;
+  }
+
+  #new-quote {
+    font-size: 1.2rem;
+    height: 2.8rem;
+  }
+}
+
+@media only screen and (max-width: 486px) {
+  .quote-container {
+    height: 700px;
+  }
+
+  #new-quote {
+    margin-top: 2.5px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .header-text {
+    letter-spacing: 0.3px;
+  }
+
+  header h1 {
+    font-size: 24px;
+    padding: 0.4rem;
+  }
+
+  header h2 {
+    font-size: 24px;
+    padding-bottom: 5px;
+  }
+
+  #quote {
+    font-size: 24px;
+  }
+
+  .quote-text i {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 282px) {
+  .header-text {
+    letter-spacing: 0.1px;
+  }
+
+  header h1 {
+    font-size: 24px;
+    padding: 0.4rem;
+  }
+
+  header h2 {
+    font-size: 24px;
+    padding-bottom: 5px;
+  }
+
+  .quote-text i {
+    font-size: 24px;
+  }
+
+  #quote {
+    font-size: 20px;
+  }
+
+  #author {
+    font-size: 22px;
+  }
+}
